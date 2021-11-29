@@ -11,19 +11,41 @@
 <body>
 
 <script>
+
+  // function-scoped
 var first = "wes"; 
 
 console.log(first); 
 
+// block-scoped
 let age = 300; 
 console.log(age); 
+
 const cool = true; 
 console.log(cool); 
 
 
+// const by default - won't be able to update
+// let if needed -- if I need to update it later on 
+// var isn't wrong, but the other two are better
+
 if (age > 10) {
   console.log('You are old'); 
 }
+
+
+// camelCase
+const iLovePizza = true; 
+
+// upperCamelCase
+ const ILovePizza = true; 
+
+// snake case!
+const this_is_snake_case = 'cool'
+
+// kebab case - cannot be used to name variables in JS! 
+const this-is-kebab-case = false; 
+
 </script>
 
 </body>
