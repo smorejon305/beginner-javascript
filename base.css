@@ -114,3 +114,9 @@ h6 {
   color: var(--black);
   text-shadow: none;
 }
+
+
+.block-text {
+  color: white; 
+  text-transform: uppercase; 
+}
