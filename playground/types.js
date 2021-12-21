@@ -77,35 +77,90 @@
 
 
 
-// NUMBERS
+// // NUMBERS
 
-const age = 100; 
-const name = `Wes`; 
+// const age = 100; 
+// const name = `Wes`; 
 
-// typeof in the console to figure out what type of object something is can be useful, if you need to check
+// // typeof in the console to figure out what type of object something is can be useful, if you need to check
 
-// integer is a whole number
-// float is a decimal
+// // integer is a whole number
+// // float is a decimal
 
-// the plus side ia loaded - can be used to add integers and floats, but if you use it with a string it concatenates... messy if you didn't mean to! 
+// // the plus side ia loaded - can be used to add integers and floats, but if you use it with a string it concatenates... messy if you didn't mean to! 
 
-// helper methods -- Math. ...
-// e.g. Math.round(20.5)
-// Math.floor(20.5)
-//  Math.ceil(20.5)
+// // helper methods -- Math. ...
+// // e.g. Math.round(20.5)
+// // Math.floor(20.5)
+// //  Math.ceil(20.5)
 
-const smarties = 20; 
-const kids = 3; 
+// const smarties = 20; 
+// const kids = 3; 
 
-const eachKidGets = Math.floor(smarties / kids); 
-console.log(`Each kid gets ${eachKidGets}`); 
+// const eachKidGets = Math.floor(smarties / kids); 
+// console.log(`Each kid gets ${eachKidGets}`); 
 
-// leftover smarties  - modulo
+// // leftover smarties  - modulo
 
-console.log(smarties % kids); 
+// console.log(smarties % kids); 
 
-// to the power of 
-// 10**2 -> 10 to the power of 2
+// // to the power of 
+// // 10**2 -> 10 to the power of 2
 
-// NaN - not a number
-// typeof 10 / 'dog' -- NaN
+// // NaN - not a number
+// // typeof 10 / 'dog' -- NaN
+
+
+// // Objects
+
+// // objects - used for groups of things
+// // when sth is an object, it's because we want to group things together
+
+// const person = { 
+//   first: 'wes', 
+//   last: 'bos', 
+//   age: 100
+// }; 
+
+// // to access this in the console, 
+// // person.first
+// // person.last
+// // person.age
+
+
+// // Null and Undefined
+// // two ways to express nothing in JS
+
+
+// // UNDEFINED - when you try to access a variable that's been created, but not set 
+// let dog; 
+// console.log(dog); 
+
+// // if the variable is truly random, and hasn't been created (like above), you'll just get an error message
+
+// // NULL
+// // a value of nothing, vs a variable that hasn't been defined
+
+// let somethingUndefined; 
+// let somethingNull = null; 
+
+
+// Booleans and Equality
+
+// boolean - true or false, on or off
+// used for logic, e.g. if statements
+
+let isDrawing = false; 
+const age = 18; 
+const ofAge = age > 19; 
+console.log (ofAge); 
+
+
+
+// Equality
+//  = -- to set a variable
+// == --> almost always a bad practice - checks only for the value 
+// === --> use this one instead - checks for value and type
+
+age === 100; 
+age === 10; 
